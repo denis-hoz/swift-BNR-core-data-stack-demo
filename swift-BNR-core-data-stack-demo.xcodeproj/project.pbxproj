@@ -32,7 +32,6 @@
 		3B13AEFD1D05EBDF00232CFB /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		3B75DCC01D01DA6300FBEF98 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		3B75DCC11D01DA6300FBEF98 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
-		3B77FF821D3405100029DFE6 /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
 		3B7D06561D2FEDDE00DEFD97 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B7D065F1D2FEDDE00DEFD97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B7D06621D2FEDDE00DEFD97 /* DKGitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKGitHubAPI.swift; sourceTree = "<group>"; };
@@ -507,7 +506,6 @@
 		3B7D06771D2FEE7900DEFD97 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3B77FF821D3405100029DFE6 /* Model 2.xcdatamodel */,
 				3B7D06781D2FEE7900DEFD97 /* Model.xcdatamodel */,
 			);
 			currentVersion = 3B7D06781D2FEE7900DEFD97 /* Model.xcdatamodel */;
