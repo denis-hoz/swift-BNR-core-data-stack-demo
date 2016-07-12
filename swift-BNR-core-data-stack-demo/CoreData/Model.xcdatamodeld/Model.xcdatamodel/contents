@@ -5,8 +5,13 @@
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="pushedAt" attributeType="Date" syncable="YES"/>
         <attribute name="stars" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <elements>
-        <element name="DKRepo" positionX="-63" positionY="-18" width="128" height="30"/>
+        <element name="DKRepo" positionX="-63" positionY="-18" width="128" height="105"/>
     </elements>
 </model>

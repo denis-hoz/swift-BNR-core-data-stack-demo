@@ -17,6 +17,7 @@ class DKReposViewController: UIViewController {
     internal var coreDataStack: CoreDataStack!
     private lazy var fetchedResultsController: ReposFetchedResultsController = {
         let fetchRequest = NSFetchRequest(entityName: DKRepo.entityName)
+        fetchRequest.fetchBatchSize = 20
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "pushedAt", ascending: false)]
         let frc = ReposFetchedResultsController(fetchRequest: fetchRequest,
                                                 managedObjectContext: self.coreDataStack.mainQueueContext)

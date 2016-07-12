@@ -9,7 +9,7 @@ import AFDateHelper
 import ObjectMapper
 import CoreDataStack
 
-class DKGitHubAPI : DKGitHubAPIProviding {
+class DKGitHubAPI {
     let coreDataStack: CoreDataStack
     let restClient = DKRESTClient()
 
@@ -29,7 +29,7 @@ extension _ArrayType where Generator.Element == JSONDict {
     }
 }
 
-extension DKGitHubAPI {
+extension DKGitHubAPI : DKGitHubAPIProviding{
     // MARK: fetch
     func fetch() {
         let workerContext = coreDataStack.mainQueueContext
@@ -42,9 +42,7 @@ extension DKGitHubAPI {
         restClient.fetchRepos { (JSON, error) in
             guard let JSON = JSON as? JSONArray else { return }
             JSON.toRepos(inContext: context)
-            context.saveContext({ (result) in
-                print("!{result}")
-            })
+            context.saveContext()
         }
     }
 }

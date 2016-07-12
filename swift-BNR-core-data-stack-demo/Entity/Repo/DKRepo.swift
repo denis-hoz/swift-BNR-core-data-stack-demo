@@ -33,7 +33,7 @@ class DKRepo: NSManagedObject, Mappable, CoreDataModelable {
         name <- map["name"]
         id <- map["id"]
         stars <- map["stargazers_count"]
-        pushedAt <- (map["pushed_at"], DateTransform())
+        pushedAt <- (map["pushed_at"], ISO8601DateTransform())
     }
 
 }
